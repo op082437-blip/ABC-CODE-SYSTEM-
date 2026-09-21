@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111827">
+<title>ABC–XYZ Code</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+<h1>ABC–XYZ Code 🔐</h1>
+<p class="subtitle">Your personal text ↔ code converter</p>
+<div class="tabs">
+<button id="encodeTab" class="active">Text → Code</button>
+<button id="decodeTab">Code → Text</button>
+</div>
+<label id="inputLabel" for="inputText">Normal text</label>
+<textarea id="inputText" placeholder="Example: HELLO BRO"></textarea>
+<div class="buttons">
+<button id="convertButton" class="primary">Convert</button>
+<button id="clearButton">Clear</button>
+</div>
+<label for="outputText">Result</label>
+<textarea id="outputText" readonly></textarea>
+<button id="copyButton" class="copy">Copy result</button>
+<details>
+<summary>How your code works</summary>
+<p>Letters use A/B/C combinations. Numbers use X/Y/Z combinations.</p>
+<p>Word separator: <code>|</code></p>
+</details>
+<p id="status" class="status"></p>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
